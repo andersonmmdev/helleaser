@@ -1,0 +1,31 @@
+{
+  "name": "helleaser",
+  "version": "1.0.0",
+  "description": "A CLI utility to generate new releases for a node project.",
+  "main": "lib/index.js",
+  "type": "module",
+  "bin": {
+    "helleaser": "lib/index.js",
+    "hl": "lib/index.js"
+  },
+  "scripts": {
+    "dev": "node lib/index.js"
+  },
+  "keywords": [
+    "release",
+    "cli",
+    "utility",
+    "node",
+    "npm"
+  ],
+  "author": "Anderson M. M.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersonmmdev/helleaser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andersonmmdev/helleaser/issues"
+  },
+  "homepage": "https://github.com/andersonmmdev/helleaser#readme"
+}
