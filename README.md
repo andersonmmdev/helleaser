@@ -13,6 +13,20 @@
 - [ ] Production environment support
 - [ ] Changelog generation
 
+## Local install
+
+Generate package with `npm`:
+
+```bash
+npm pack
+```
+
+Install globally:
+
+```bash
+npm install -g helleaser-*.*.*.tgz
+```
+
 ## Usage
 
 Navigate to your Node.js root directory and run:
@@ -29,14 +43,15 @@ hl [options]
 
 Common CLI options include:
 
-| Option             | Description                                               |
-| ------------------ | --------------------------------------------------------- |
-| `--merge <branch>` | Merge changes into the specified branch after new version |
-| `--build <cmd>`    | Custom build command (default: `npm run build`)           |
-| `--staging`, `-s`  | Use staging environment (default: `production`)           |
-| `--no-tag`, `-nt`  | Do not generate a tag, only push the commit               |
-| `--help`, `-h`     | Display help information                                  |
-| `--version`, `-v`  | Display the current version                               |
+| Option                  | Description                                                     |
+| ----------------------- | --------------------------------------------------------------- |
+| `--merge <branch>`      | Merge changes into the specified branch after new version       |
+| `--build <cmd>`         | Custom build command (default: `npm run build`)                 |
+| `--staging`, `-s`       | Use staging environment (default: `production`)                 |
+| `--skip-version`, `-sv` | Do not bump version in `package.json`, will use current version |
+| `--no-tag`, `-nt`       | Do not generate a tag, only push the commit                     |
+| `--help`, `-h`          | Display help information                                        |
+| `--version`, `-v`       | Display the current version                                     |
 
 ## License
 
